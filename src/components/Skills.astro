@@ -1,0 +1,68 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Full Stack</h2>
+		
+<ul>
+<li> programming languages: Python, JavaScript, Java</li>
+<li> Web development: HTML, CSS, frameworks (Angular)</li>
+<li> Databases: SQL</li>
+<li> Version Control: GitHub.</p></li>
+</ul>
+	</div>
+	
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Soft Skills</h2>
+      <ul>
+<li>Problem Solving</li>
+<li>Clear Communication and Collaboration (often in international teams).</li>
+<li>Adaptability: Learn new technologies quickly.</li>
+<li>Critical Thinking to analyze project needs</p></li>
+</ul>
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-500);
+		border-radius:1.2emrem;
+		padding: 1rem;
+		background-color: var(--gray-500_20);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 10rem;
+	}
+
+	
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 10rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-3xl);
+		}
+	}
+	
+</style>
